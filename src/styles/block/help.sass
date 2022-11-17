@@ -1,0 +1,54 @@
+@import 'font'
+    
+.help
+    border: none
+    .container
+        position: relative
+
+    .block
+        color: var(--main-color)
+        background: url('../../images/calltoaction_bg.png') no-repeat 100%
+        min-height: 590px
+        font-size: $main
+        padding: 50px 60px 40px 60px
+
+    .left
+        width: 50%
+
+    .box
+        padding-top: 24px
+
+    .title
+        padding-bottom: 24px
+
+    .subtitle
+        font-size: $h2-small
+        padding: 24px 0
+
+    .telephone
+        text-decoration: none
+        font-size: $h2-small
+        font-weight: bold
+        color: var(--main-brand-color)
+
+@media screen and (max-width: 1200px)
+    .help
+        padding: 0 0 0 30px
+
+        .block
+            background-position: left
+            padding: 30px
+
+        .left
+            width: 100%
+
+
+@media screen and (max-width: 600px)
+    .help
+        .subtitle
+            font-size: $th
+            line-height: 28px
+        
+        .telephone
+            font-size: $th
+            line-height: 28px

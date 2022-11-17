@@ -1,0 +1,17 @@
+- var footerClass = 'footer';
+- var logoClass = 'logo'
+- var signatureClass = 'signature'
+- var boxClass = 'box'
+
+footer(class=footerClass)
+    div(class=containerClass)
+        div(class=blockClass)
+            a(class=leftClass href="/")
+                img(class=logoClass src='images/logo-cre.svg' alt='logo')
+                p(class=signatureClass) Ремонт техники в Москве
+            div(class=rightClass)
+                p Eжедневно с 9.00 до 21.00
+                a(class=telephoneClass href=phoneNumberHref)= phoneNumber
+        div(class=boxClass)
+            p(class=tinyClass) Copyright © 2022. Копирование и использование информации и материалов сайта запрещено. Сайт носит информационный характер и ни при каких условиях не является офертой. Товарные знаки, торговые марки, фирменные обозначения используемые на сайте, принадлежат производителю и не являются собственностью сервисного центра. #[a(href="#popup-5" class=linkClass, class=jsPopupOpen) Политика конфиденциальности и обработки персональных данных]
+include popup

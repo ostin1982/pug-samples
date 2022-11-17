@@ -1,0 +1,8 @@
+.input {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid var(--main-brand-color);
+}
+.input::-webkit-input-placeholder {
+  font-size: 18px;
+}/*# sourceMappingURL=input.css.map */

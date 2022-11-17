@@ -1,0 +1,13 @@
+- var headerClass = 'header'
+- var logoClass = 'logo'
+- var signatureClass = 'signature'
+
+header(class=headerClass)
+    div(class=containerClass)
+        div(class=blockClass)
+            a(class=leftClass href="/")
+                img(class=logoClass src='images/logo-cre.svg' alt='logo')
+                p(class=signatureClass) Ремонт техники в Москве
+            div(class=rightClass)
+                p Eжедневно с 9.00 до 21.00
+                a(class=telephoneClass href=phoneNumberHref)= phoneNumber

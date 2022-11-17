@@ -1,0 +1,20 @@
+- var mapTitle = 'Контактная информация'
+- var contacts = '121059, Москва, площадь Киевского Вокзала, 2'
+
+- var mapClass = 'map'
+
+section(class=mapClass)
+    div(class=containerClass)
+        p(class=descriptionClass)= mapTitle
+        div(class=blockClass)
+            div(class=leftClass)
+                h2 Сервис высокого уровня, который #[span(class=bigClass) всегда рядом]
+                ul(class=listClass)
+                    each item in listMap
+                        li(class=linkClass)= item
+                p(class=titleClass) Центральный офис:
+                p(class=subtitleClass)= contacts
+                div(class=buttonBlockClass)
+                    a(href="#popup-4" class=buttonClass, class=colorClass, class=jsPopupOpen) Вызвать мастера/Курьера
+            div(class=rightClass)
+                img(class=imgClass, src='images/karta.jpg', alt="map")

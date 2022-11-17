@@ -1,0 +1,48 @@
+.promo .container {
+  position: relative;
+}
+.promo .block {
+  color: var(--main-color);
+  min-height: 470px;
+  font-size: 18px;
+  padding: 50px 60px 40px 60px;
+}
+.promo .left {
+  width: 50%;
+}
+.promo .big {
+  color: var(--main-brand-color);
+  font-size: 50px;
+  font-weight: bold;
+}
+.promo .list {
+  padding: 24px 0 24px 20px;
+}
+.promo .subtitle {
+  font-size: 14px;
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .promo {
+    padding: 0 0 0 30px;
+  }
+  .promo .block {
+    padding: 30px;
+  }
+  .promo .left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .promo .big {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .promo .big {
+    font-size: 34px;
+    line-height: 34px;
+  }
+}/*# sourceMappingURL=promo.css.map */

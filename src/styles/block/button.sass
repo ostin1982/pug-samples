@@ -1,0 +1,38 @@
+@import 'font'
+
+.button 
+    padding: 7px 20px
+    border: 2px solid var(--main-brand-color)
+    font-size: $main
+    cursor: pointer
+    text-decoration: none
+
+.color
+    background: var(--main-brand-color)
+    color: var(--main-background-color)
+
+    &:hover
+        background: #a0024920
+        color: var(--main-color)
+        transition: 0.2s
+
+.notColor
+    color: var(--main-color)
+    margin-left: 10px
+
+    &:hover
+        background: #a0024980
+        color: var(--main-background-color)
+        transition: 0.2s
+
+.visible
+    opacity: 0
+
+@media screen and (max-width: 600px)
+    .notColor
+        margin-left: 0
+        margin-top: 10px
+
+    .tiny
+        font-size: $tiny
+        padding: 6px

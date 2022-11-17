@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'LGSmart';
+    src: url(../font/LGSmartLight__W.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'LGSmart';
+    src: url(../font/LGSmartRegular__W.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'LGSmart';
+    src: url(../font/LGSmartSemiBold__W.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'LGSmart';
+    src: url(../font/LGSmartBold__W.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}

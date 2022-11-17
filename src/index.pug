@@ -1,0 +1,89 @@
+extends layout/main
+
+block variables
+    
+    - var pageTitle = 'Ремонт Техники'
+    - var advantagesTitle = 'Преимущества центра'
+    - var phoneNumber = '+7 (966) 888-47-39'
+    - var phoneNumberHref = 'tel: +79668884739'
+    
+    - var listShowcase = ["бесплатная диагностика;", "выезд курьера по городу бесплатно;", "удобное расположение в центре города;", "гарантия на все работы до 3 лет."]
+    - var listPromo = ["Вам придет SMS-сообщение с промокодом;", "Сообщите код администратору при обращении в сервис;", "Получите скидку в 1000 рублей при оплате выполненных работ, но не более 15% от суммы ремонта."]
+    - var listMap = ["отличное расположение сервиса;", "есть бесплатная парковка;", "бесплатный курьер в пределах города;", "работаем без выходных и праздников."]
+    
+    - var containerClass = 'container'
+    - var mainClass = 'main'
+    - var telephoneClass = 'telephone'
+    - var titleClass = 'title'
+    - var subtitleClass = 'subtitle'
+    - var showcaseClass = 'showcase'
+    - var blockClass = 'block'
+    - var leftClass = 'left'
+    - var rightClass = 'right'
+    - var listClass = 'list'
+    - var linkClass = 'link'
+    - var buttonBlockClass = 'buttonBlock'
+    - var buttonClass = 'button'
+    - var colorClass = 'color'
+    - var notColorClass = 'notColor'
+    - var advantagesClass = 'advantages'
+    - var descriptionClass = 'description'
+    - var cardClass = 'card'
+    - var cardColorClass = 'cardColor'
+    - var cardNotColorClass = 'notCardColor'
+    - var changeCardColorClass1 = 'changeCardColor1'
+    - var changeCardColorClass2 = 'changeCardColor2'
+    - var cardClass = 'card'
+    - var numberClass = 'number'
+    - var imageClass = 'image'
+    - var imgClass = 'img'
+    - var tinyClass = 'tiny'
+    - var boxClass = 'box'
+
+    - var jsPopupOpen = 'js-popup-open'
+    - var jsPopupClose = 'js-popup-close'
+    - var jsBlock = 'js-block'
+    - var jsCard = 'js-card'
+    - var jsPice = 'js-price'
+    - var jsPriceClose = 'js-price-close'
+    - var jsTel = 'js-tel'
+
+block content
+    div(class=mainClass)
+        section(class=showcaseClass)
+            div(class=containerClass)
+                div(class=blockClass)
+                    div(class=leftClass)
+                        h1 Ремонт техники любой сложности
+                        p(class=subtitleClass) Исключительно высокий уровень качества ремонта
+                        ul(class=listClass)
+                            each item in listShowcase
+                                li(class=linkClass)= item
+                        div(class=buttonBlockClass)
+                            a(href="#popup-2" class=buttonClass, class=colorClass, class=jsPopupOpen) Узнать стоимость ремонта
+                            a(href="#popup-3" class=buttonClass, class=notColorClass, class=jsPopupOpen) Получить скидку 1000 ₽
+                    div(class=rightClass)
+        section(class=advantagesClass)
+            div(class=containerClass)
+                p(class=descriptionClass)= advantagesTitle
+                div(class=blockClass)
+                    div(class=(cardClass), class=(cardColorClass))
+                        p(class=titleClass) Экспресс диагностика
+                        p Выявление причины неисправности в течение 10 минут
+                        span(class=numberClass) 1
+                    div(class=(cardClass), class=(cardNotColorClass))
+                        p(class=titleClass) Качественные комплектующие
+                        p Используем запчасти высокого качества, даем гарантию
+                        span(class=numberClass) 2
+                    div(class=(cardClass), class=(cardNotColorClass), class=(changeCardColorClass1))
+                        p(class=titleClass) Выезд специалиста
+                        p Выезд работника по указанному адресу в течение 40 минут
+                        span(class=numberClass) 3
+                    div(class=(cardClass), class=(cardColorClass), class=(changeCardColorClass2))
+                        p(class=titleClass) Срочный ремонт техники
+                        p Решение проблемы поломки техники в течение 1 дня
+                        span(class=numberClass) 4
+        include modules/products
+        include modules/help
+        include modules/promo
+        include modules/map

@@ -1,0 +1,18 @@
+-var helpTitle = 'Поддержка клиентов 24/7'
+
+- var helpClass = 'help'
+
+section(class=helpClass)
+    div(class=containerClass)
+        p(class=descriptionClass)= helpTitle
+        div(class=blockClass)
+            div(class=leftClass)
+                h2 Задайте вопрос мастеру прямо сейчас!
+                div(class=boxClass)
+                    p(class=titleClass) Мы ответим на ваши вопросы в любое время, включая выходные и праздничные дни.
+                    p(class=titleClass) Сделаем все от нас зависящее, чтобы вы получали удовольствие от вашего девайса каждый день
+                div(class=buttonBlockClass)
+                    a(href="#popup-1" class=buttonClass, class=colorClass, class=jsPopupOpen) Задать вопрос
+                p(class=subtitleClass) Или позвоните по указанному номеру:
+                a(class=telephoneClass href=phoneNumberHref)= phoneNumber
+            div(class=rightClass)

@@ -1,0 +1,54 @@
+@import 'font'
+    
+.showcase 
+    min-height: 600px
+    //background-image: url('../../images/nobrand-bg-1.jpg')
+    background-color: var(--main-background-color)
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
+    padding: 100px 0
+
+    .block
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+
+    .left
+        width: 50%
+
+    .subtitle
+        padding: 15px 0
+
+    .list
+        list-style-type: none
+        padding-left: 16px
+
+    .link
+        position: relative
+
+        &::before
+            position: absolute
+            content: '°'
+            top: 5px
+            left: -16px
+            padding-bottom: 10px
+
+    .buttonBlock
+        padding-top: 15px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+
+@media screen and (max-width: 1200px)
+    .showcase
+        padding: 30px
+
+        .left
+            width: 100%
+
+@media screen and (max-width: 600px)
+    .showcase
+        .buttonBlock
+            flex-direction: column
+            align-items: stretch

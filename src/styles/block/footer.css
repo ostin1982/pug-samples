@@ -1,0 +1,67 @@
+.footer {
+  position: relative;
+  background: var(--main-background-color);
+  padding: 20px 0;
+}
+.footer .block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer .left:hover {
+  opacity: 0.8;
+}
+.footer .logo {
+  width: 120px;
+  margin-right: 10px;
+}
+.footer .signature {
+  padding-left: 10px;
+  border-left: 1px solid var(--main-brand-color);
+}
+.footer .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .telephone {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+.footer .box {
+  padding-top: 20px;
+}
+.footer .tiny {
+  font-size: 12px;
+}
+.footer .link {
+  color: var(--main-brand-color);
+}
+.footer .link:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer .block {
+    flex-direction: column;
+  }
+  .footer .right {
+    padding-top: 20px;
+  }
+}/*# sourceMappingURL=footer.css.map */

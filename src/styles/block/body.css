@@ -1,0 +1,43 @@
+@import '../../font/font.css';
+:root {
+  --main-color: #102010;
+  --main-background-color: #f5f5f5;
+  --secong-background-color: #f9f9f9;
+  --main-card-color: #e6e5e7;
+  --second-card-color: #dadada;
+  --main-brand-color: #a00249;
+  --main-title-color: #818081;
+  --second-title-color: #c5c5c5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "LGSmart";
+  font-size: 18px;
+  background: var(--main-background-color);
+}
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 20px;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb {
+  width: 6px;
+  height: 20px;
+  background-color: var(--main-title-color);
+  border-radius: 2px;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-brand-color);
+}
+body::-webkit-scrollbar-track {
+  background-color: var(--main-background-color);
+}/*# sourceMappingURL=body.css.map */

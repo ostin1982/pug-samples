@@ -1,0 +1,18 @@
+-var promoTitle = 'Спецпредложения'
+
+- var promoClass = 'promo'
+- var bigClass = 'big'
+
+section(class=promoClass)
+    div(class=containerClass)
+        p(class=descriptionClass)= promoTitle
+        div(class=blockClass)
+            div(class=leftClass)
+                h2 Воспользуйтесь промокодом на #[span(class=bigClass) 1000 рублей!]
+                ol(class=listClass)
+                    each item in listPromo
+                        li(class=linkClass)= item
+                p(class=subtitleClass) * скидки по акциям не суммируются
+                div(class=buttonBlockClass)
+                    a(href="#popup-3" class=buttonClass, class=colorClass, class=jsPopupOpen) Получить промокод
+            div(class=rightClass)

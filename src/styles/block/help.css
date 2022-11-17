@@ -1,0 +1,55 @@
+.help {
+  border: none;
+}
+.help .container {
+  position: relative;
+}
+.help .block {
+  color: var(--main-color);
+  background: url("../../images/calltoaction_bg.png") no-repeat 100%;
+  min-height: 590px;
+  font-size: 18px;
+  padding: 50px 60px 40px 60px;
+}
+.help .left {
+  width: 50%;
+}
+.help .box {
+  padding-top: 24px;
+}
+.help .title {
+  padding-bottom: 24px;
+}
+.help .subtitle {
+  font-size: 36px;
+  padding: 24px 0;
+}
+.help .telephone {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--main-brand-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .help {
+    padding: 0 0 0 30px;
+  }
+  .help .block {
+    background-position: left;
+    padding: 30px;
+  }
+  .help .left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .help .subtitle {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .help .telephone {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}/*# sourceMappingURL=help.css.map */

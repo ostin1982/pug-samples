@@ -1,0 +1,110 @@
+@import 'font'
+    
+.products
+    display: block
+
+    .container
+        position: relative
+
+    .block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        width: 100%
+
+    .active-t
+        display: block !important
+
+    .not-active-t
+        display: none
+
+    .card
+        background: var(--second-card-color)
+        border: 1px solid var(--main-background-color)
+        padding: 20px 20px 0 20px
+        text-decoration: none
+        height: 410px
+
+        &:hover 
+            background: var(--main-card-color)
+
+        &:hover .title 
+            color: var(--main-color)
+            font-weight: 900
+
+        &:hover .subtitle 
+            color: var(--main-title-color)
+            font-weight: 900
+
+    .image
+        height: 260px
+
+    .img
+        display: block
+        height: auto
+        max-width: 100%
+        object-fit: contain
+
+    .box
+        padding: 10px
+
+    .title
+        font-size: $title
+        font-weight: 400
+        color: var(--main-title-color)
+        text-align: center
+        line-height: 24px
+    
+    .subtitle
+        text-align: right
+        margin: 0
+        padding-top: 20px
+        font-weight: 400
+
+    .price
+        display: none
+
+        .heading
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            padding: 20px
+
+        .arrow
+            padding: 0 20px 0 0
+            cursor: pointer
+
+            &:hover 
+                padding: 0 24px 0 0
+
+            svg
+                fill: var(--main-color)
+                width: 40px
+                height: 40px
+
+
+            &:hover svg
+                fill: var(--main-brand-color)
+                width: 36px
+
+@media screen and (max-width: 1200px)
+    .products
+        padding: 0 0 0 30px
+        
+        .block
+            grid-template-columns: 1fr 1fr
+
+        .card
+            padding: 10px 10px 0 10px
+
+        .image
+            height: auto
+            width: 280px
+            margin: 0 auto
+
+@media screen and (max-width: 600px)
+    .products
+        .block
+            grid-template-columns: 1fr
+
+        .image
+            width: 280px

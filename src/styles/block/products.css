@@ -1,0 +1,111 @@
+.products {
+  display: block;
+}
+.products .container {
+  position: relative;
+}
+.products .block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+.products .active-t {
+  display: block !important;
+}
+.products .not-active-t {
+  display: none;
+}
+.products .card {
+  background: var(--second-card-color);
+  border: 1px solid var(--main-background-color);
+  padding: 20px 20px 0 20px;
+  text-decoration: none;
+  height: 410px;
+}
+.products .card:hover {
+  background: var(--main-card-color);
+}
+.products .card:hover .title {
+  color: var(--main-color);
+  font-weight: 900;
+}
+.products .card:hover .subtitle {
+  color: var(--main-title-color);
+  font-weight: 900;
+}
+.products .image {
+  height: 260px;
+}
+.products .img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.products .box {
+  padding: 10px;
+}
+.products .title {
+  font-size: 34px;
+  font-weight: 400;
+  color: var(--main-title-color);
+  text-align: center;
+  line-height: 24px;
+}
+.products .subtitle {
+  text-align: right;
+  margin: 0;
+  padding-top: 20px;
+  font-weight: 400;
+}
+.products .price {
+  display: none;
+}
+.products .price .heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+.products .price .arrow {
+  padding: 0 20px 0 0;
+  cursor: pointer;
+}
+.products .price .arrow:hover {
+  padding: 0 24px 0 0;
+}
+.products .price .arrow svg {
+  fill: var(--main-color);
+  width: 40px;
+  height: 40px;
+}
+.products .price .arrow:hover svg {
+  fill: var(--main-brand-color);
+  width: 36px;
+}
+
+@media screen and (max-width: 1200px) {
+  .products {
+    padding: 0 0 0 30px;
+  }
+  .products .block {
+    grid-template-columns: 1fr 1fr;
+  }
+  .products .card {
+    padding: 10px 10px 0 10px;
+  }
+  .products .image {
+    height: auto;
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .products .block {
+    grid-template-columns: 1fr;
+  }
+  .products .image {
+    width: 280px;
+  }
+}/*# sourceMappingURL=products.css.map */

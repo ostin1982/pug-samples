@@ -1,0 +1,66 @@
+@import 'font'
+    
+.map
+    .container
+        position: relative
+
+    .block
+        min-height: 470px
+        background: var(--main-card-color)
+        font-size: $main
+        padding: 50px 60px 40px 60px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    
+    .left
+        width: 50%
+
+    .big
+        color: var(--main-brand-color)
+        font-size: $h1
+        font-weight: bold
+
+    .list
+        padding: 24px 0 24px 20px
+
+    .title
+        color: var(--main-title-color)
+        font-weight: 600
+
+    .subtitle 
+        margin-bottom: 24px
+
+    .right
+        width: 50%
+
+    .img
+        width: 100%
+        object-fit: contain
+
+@media screen and (max-width: 1200px)
+    .map
+        padding: 0 0 0 30px
+
+        .block
+            flex-direction: column
+            padding: 30px
+
+        .left
+            width: 100%
+
+        .right
+            width: 100%
+            padding-top: 30px
+
+@media screen and (max-width: 720px)
+    .map
+        .big
+            font-size: $h2-small
+            line-height: 36px
+
+@media screen and (max-width: 600px)
+    .map
+        .big
+            font-size: $title
+            line-height: 34px

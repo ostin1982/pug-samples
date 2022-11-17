@@ -1,0 +1,66 @@
+@import 'font'
+
+.footer
+    position: relative
+    background: var(--main-background-color)
+    padding: 20px 0
+
+    .block
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+
+    .left
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-decoration: none
+        cursor: pointer
+
+        &:hover 
+            opacity: 0.8
+    
+    .logo
+        width: 120px
+        margin-right: 10px
+
+    .signature
+        padding-left: 10px
+        border-left: 1px solid var(--main-brand-color)
+
+    .right
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+
+    .telephone
+        color: var(--main-color)
+        text-decoration: none
+        font-size: $large
+        font-weight: bold
+
+    .box
+        padding-top: 20px
+
+    .tiny
+        font-size: $tiny
+
+    .link
+        color: var(--main-brand-color)
+
+        &:hover
+            opacity: 0.8
+            text-decoration: none
+
+@media screen and (max-width: 1200px) 
+    .footer
+        padding: 20px 30px
+
+@media screen and (max-width: 600px) 
+    .footer
+        .block
+            flex-direction: column
+
+        .right
+            padding-top: 20px

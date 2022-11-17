@@ -1,0 +1,93 @@
+h1 {
+  color: var(--main-color);
+  font-size: 50px;
+  line-height: 50px;
+}
+
+h2 {
+  color: var(--main-color);
+  font-size: 45px;
+  line-height: 55px;
+}
+
+h3 {
+  color: var(--main-color);
+  font-size: 24px;
+  line-height: 24px;
+}
+
+p {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+li {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  width: 100%;
+  background: var(--second-card-color);
+}
+
+thead {
+  padding: 40px;
+}
+
+th {
+  padding: 12px 40px;
+  border-bottom: 2px solid var(--main-background-color);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--main-title-color);
+}
+
+tbody tr:hover {
+  background: var(--main-background-color);
+}
+tbody tr:hover .visible {
+  opacity: 1;
+}
+
+td {
+  padding: 12px 40px;
+  border-bottom: 2px solid var(--main-background-color);
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  th {
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  td {
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+  h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}/*# sourceMappingURL=defolt.css.map */

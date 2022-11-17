@@ -1,0 +1,36 @@
+@import '../../font/font.css'
+@import 'color'
+@import 'font'
+
+*,
+*::before,
+*::after 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'LGSmart'
+    font-size: $main
+    background: var(--main-background-color)
+
+    &::-webkit-scrollbar 
+        width: 6px
+        height: 20px
+        cursor: pointer
+
+    &::-webkit-scrollbar-thumb 
+        width: 6px
+        height: 20px
+        background-color: var(--main-title-color)
+        border-radius: 2px
+        cursor: pointer
+
+        &:hover
+            background-color: var(--main-brand-color)
+
+        &:
+
+    &::-webkit-scrollbar-track
+        background-color: var(--main-background-color)
+

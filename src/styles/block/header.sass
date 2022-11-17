@@ -1,0 +1,56 @@
+@import 'font'
+
+.header
+    position: sticky
+    top: 0
+    left: 0
+    background: var(--secong-background-color)
+    padding: 20px 0
+    z-index: 23
+
+    .block
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+
+    .left
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-decoration: none
+        cursor: pointer
+
+        &:hover 
+            opacity: 0.8
+    
+    .logo
+        width: 120px
+        margin-right: 10px
+
+    .signature
+        padding-left: 10px
+        border-left: 1px solid var(--main-brand-color)
+
+    .right
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+
+    .telephone
+        color: var(--main-color)
+        text-decoration: none
+        font-size: $large
+        font-weight: bold
+
+@media screen and (max-width: 1200px) 
+    .header
+        padding: 20px 30px
+
+@media screen and (max-width: 600px) 
+    .header
+        .block
+            flex-direction: column
+
+        .right
+            padding-top: 20px

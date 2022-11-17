@@ -1,0 +1,63 @@
+.advantages .container {
+  position: relative;
+}
+.advantages .block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.advantages .card {
+  padding: 80px 30px;
+  border-radius: 0;
+  border-color: var(--main-card-color);
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.1s ease-in-out;
+  max-height: 300px;
+  height: 100%;
+}
+.advantages .title {
+  font-size: 34px;
+  color: var(--main-title-color);
+  margin-bottom: 10px;
+}
+.advantages .number {
+  position: absolute;
+  font-size: 280px;
+  color: var(--second-title-color);
+  font-weight: 700;
+  right: -30px;
+  bottom: -5px;
+  line-height: 170px;
+}
+
+.cardColor {
+  background: var(--main-card-color);
+}
+
+.notCardColor {
+  background: var(--second-card-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .advantages {
+    padding: 0 0 0 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .advantages .block {
+    grid-template-columns: 1fr;
+  }
+  .advantages .number {
+    font-size: 160px;
+    right: -20px;
+    bottom: -40px;
+  }
+  .changeCardColor1 {
+    background: var(--main-card-color);
+  }
+  .changeCardColor2 {
+    background: var(--second-card-color);
+  }
+}/*# sourceMappingURL=advantages.css.map */

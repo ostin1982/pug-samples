@@ -1,0 +1,49 @@
+@import 'font'
+    
+.promo
+    .container
+        position: relative
+
+    .block
+        color: var(--main-color)
+        //background: url('../../images/promocode_bg.png')
+        min-height: 470px
+        font-size: $main
+        padding: 50px 60px 40px 60px
+
+    .left
+        width: 50%
+
+    .big
+        color: var(--main-brand-color)
+        font-size: $h1
+        font-weight: bold
+
+    .list
+        padding: 24px 0 24px 20px
+
+    .subtitle
+        font-size: $small
+        padding-bottom: 24px
+
+@media screen and (max-width: 1200px)
+    .promo
+        padding: 0 0 0 30px
+
+        .block
+            padding: 30px
+
+        .left
+            width: 100%
+
+@media screen and (max-width: 720px)
+    .promo
+        .big
+            font-size: $h2-small
+            line-height: 36px
+
+@media screen and (max-width: 600px)
+    .promo
+        .big
+            font-size: $title
+            line-height: 34px
